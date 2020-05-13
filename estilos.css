@@ -1,0 +1,95 @@
+*{/*RESET DO CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{/*tagDoHTML*/
+      background-image:url(./img/fundo-azul.jpg);
+      background-size: auto 100vh; /*vh: viewport height*/
+      height: 100vh;
+      font-family: Arial;
+      font-size: 12px;
+  }
+  
+  /*se tela tiver pelo menos 400px*/
+  /*@ breakpoints*/
+  @media (min-width: 400px) {
+    body{
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body{
+      font-size: 18px;
+    }
+  }
+    
+  header{
+    height: 100vh;
+    display: flex; /*display em colunas*/
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu{/*.nomeDaClasse ou #nomeDoID*/
+    background-color: DarkCyan;
+    position: fixed; /*menu fixo no topo da tela*/
+    width: 100vw;
+    top: 0;
+  }
+  
+  .menu ul{
+    display: flex; /*disposicao em coluna*/
+    justify-content: space-around;
+  }
+  
+  .menu li { /*todas li do menu -> seletor hierárquico*/
+    list-style: none;
+  }
+  
+  .menu a{
+    display: block;
+    padding: 20px 30px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover { /*pseudoclasse p/ mouse por cima(hover) de um 'a'*/
+    text-decoration:underline;
+    background-color: rgba(224, 255, 255, .2);
+    color: aquamarine;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    text-align: center;
+  }
+  
+  .site-title{
+    font-size: 3em; /*evitar valores exatos e sim relativos*/
+  }
+  .site-subtitle{
+    font-style: italic;
+  }
+  
+  #portfolio{
+    text-align: center;
+  }
+  
+  figcaption{
+    padding: 5px 0px 30px 0px;
+  }
+  
+  .img-portfolio{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 80vw;
+  }
+  
