@@ -6,46 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Lírio</title>
     <!-- Código que carrega arquivos CSS -->
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./estilos.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Gochi+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a85da8476.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <div>
-          <h1 class="site-title">Lucas Henrique Lírio Costa</h1>
-          <h2 class="site-subtitle">Estudante de Engenharia da Computação</h2>
-        </div>
+  <header id="topo">
+      <nav class="menu">
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#port">Portfólio</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="titulos">
+        <h1 class="site-title">Lucas Henrique Lírio Costa</h1>
+        <h2 class="site-subtitle">Estudante de Engenharia da Computação</h2>
+      </div>
 
-      </header>
+  </header>
 
+  <section class="sobre" id="about">
+    <h2>Sobre</h2>
+    <figure class="avatar">
+      <img id="perfil" src="./img/homem-terno.png" alt="Foto do perfil">
+    </figure>
+    <p>Exemplo de parágrafo para descrição pessoal</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae nostrum aliquam deleniti vero nesciunt fuga sequi et autem eum quisquam nemo eos id repudiandae, maxime adipisci! Quod pariatur ullam numquam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores molestiae exercitationem, quia velit eos minima natus ex eaque sit veniam nobis blanditiis libero, et ad! Cupiditate sit eveniet dolorum eligendi.Consectetur itaque veniam rerum nobis, reprehenderit dignissimos neque labore blanditiis facere recusandae a perferendis accusamus. Beatae, at deserunt ducimus esse repellendus, quas nihil inventore maiores unde officia asperiores aliquid dolorum!</p>
+    <p>Este site foi construído durante a <a id="linkAlura" target="_blank" href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura ;)</a></p>
+  </section>
 
-      <section>
-        <div id="portfolio">
-          <h2>Portfólio</h2>
-        <figure>
-          <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-          <figcaption>eCommerce</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-          <figcaption>Mobile</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-          <figcaption>Web design</figcaption>
-        </figure>
-        <figure>
-          <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-          <figcaption>Projetos pessoais</figcaption>
-        </figure>
-        </div>
-        
-      </section>
+  <section id="port">
+    <h2 id="portitulo">Portfólio</h2>
+    <!--tag alt do img p/ acessibilidade de pessoas com deficiencia visual-->
+    <div class="grid" id="portfolio">
+    <figure>
+      <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+      <figcaption>eCommerce</figcaption>
+    </figure>
+    <figure>
+      <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+      <figcaption>Mobile</figcaption>
+    </figure>
+    <figure>
+      <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+      <figcaption>Web design</figcaption>
+    </figure>
+    <figure>
+      <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+      <figcaption>Projetos pessoais</figcaption>
+    </figure>
+    </div>
+
+    <section class="contato" id="contact">
+      <h2>Contato</h2>
+      <div class="grid icons">
+        <a target="_blank" href="https://github.com/">
+          <i class="fab fa-github-square"></i>_GitHub
+        </a>
+        <a target="_blank" href="https://twitter.com/">
+          <i class="fab fa-twitter-square"></i>_Twitter
+        </a>
+        <a target="_blank" href="https://linkedin.com/">
+          <i class="fab fa-linkedin"></i>_Linked-in
+        </a>
+        <a href="mailto:catatau.hell@gmail.com">
+          <i class="fas fa-envelope-square"></i>_E-mail
+        </a>
+      </div>
+    </section>
+    
+  </section>
 </body>
 </html>
